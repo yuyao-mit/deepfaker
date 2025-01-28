@@ -190,4 +190,4 @@ __pycache__/
 *.zip
 
 # Checkpoint path
-.ckpt
+*.ckpt
