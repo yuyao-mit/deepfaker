@@ -169,3 +169,25 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+
+
+# Ignore checkpoint files
+*.pth
+
+# Ignore dataset files
+Multiscale_Image_Dataset/
+*.tiff
+
+
+# Ignore other typical files to exclude
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+
+# Any dataset
+*.zip
+
+# Checkpoint path
+.ckpt
