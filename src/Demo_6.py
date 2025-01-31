@@ -34,9 +34,10 @@ def main(
     data = Data(
         root_dir=DATASET_DIR,
         brightness=1.0,
-        batch_size=32,
+        batch_size=4,
         resolution_lr=64,
-        resolution_hr=1024
+        resolution_hr=1024,
+        num_workers=4
     )
     data.setup()
 
