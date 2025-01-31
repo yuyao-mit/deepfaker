@@ -18,7 +18,7 @@ def eval_reconstruction(
     model, 
     brightness,
     device,
-    dataset_dir="/home/gridsan/yyao/Research_Projects/Microstructure_Enough/deep_faker/dataset/raw",
+    dataset_dir="/home/gridsan/yyao/Research_Projects/Microstructure_Enough/deepfaker/dataset/raw",
     batch_size=32, 
     resolution=256, 
     seed=42
@@ -36,6 +36,7 @@ def eval_reconstruction(
     test_loader = data.val_dataloader()
     test_images = next(iter(test_loader)).to(device)
     
+    model.eval()
     # Run the model inference
     with torch.no_grad():
         output = model(test_images)
