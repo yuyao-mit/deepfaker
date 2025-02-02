@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH -J deepfaker
-#SBATCH -N 16
+#SBATCH -N 6
 #SBATCH --ntasks-per-node=4
 #SBATCH -p rtx
 #SBATCH -t 48:00:00
@@ -25,5 +25,5 @@ srun python3 Demo_6.py \
   --ckpt_dir "/work2/10214/yu_yao/frontera/deepfaker/src/ckpt" \
   --ckpt_interval 1000 \
   --strategy "ddp" \
-  --num_nodes 16
+  --num_nodes 6
 
