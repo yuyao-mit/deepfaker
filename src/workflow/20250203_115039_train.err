@@ -1,0 +1,6 @@
+usage: Demo_6.py [-h] --max_epochs MAX_EPOCHS --ckpt_dir CKPT_DIR
+                 [--ckpt_interval CKPT_INTERVAL] [--ckpt_path CKPT_PATH]
+                 [--strategy STRATEGY] --num_nodes NUM_NODES
+Demo_6.py: error: the following arguments are required: --num_nodes
+srun: error: d-10-3-1: task 0: Exited with exit code 2
+/var/spool/slurmd/job27950519/slurm_script: line 27: --ckpt_interval: command not found
