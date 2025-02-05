@@ -32,3 +32,4 @@ LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [GPU-86d72a62-bc3a-8e75-c29a-bc11809c2499,
 SLURM auto-requeueing enabled. Setting signal handlers.
 /home/gridsan/yyao/.local/lib/python3.10/site-packages/lightning/pytorch/trainer/connectors/logger_connector/result.py:434: It is recommended to use `self.log('val_loss', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
 /home/gridsan/yyao/.local/lib/python3.10/site-packages/lightning/pytorch/loops/fit_loop.py:310: The number of training batches (36) is smaller than the logging interval Trainer(log_every_n_steps=50). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+slurmstepd-d-10-9-1: error: *** STEP 27954794.0 ON d-10-9-1 CANCELLED AT 2025-02-04T15:22:47 DUE TO TIME LIMIT ***
