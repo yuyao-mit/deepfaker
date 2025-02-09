@@ -1,0 +1,2 @@
+srun: fatal: SLURM_MEM_PER_CPU, SLURM_MEM_PER_GPU, and SLURM_MEM_PER_NODE are mutually exclusive.
+/var/spool/slurmd/job27932464/slurm_script: line 27: --ckpt_interval: command not found
