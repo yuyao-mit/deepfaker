@@ -1,0 +1,35 @@
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+Initializing distributed: GLOBAL_RANK: 0, MEMBER: 1/1
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All distributed processes registered. Starting with 1 processes
+----------------------------------------------------------------------------------------------------
+
+2025-02-03 15:23:05.509123: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-02-03 15:23:05.524209: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:485] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2025-02-03 15:23:05.540577: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:8454] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2025-02-03 15:23:05.545485: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1452] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2025-02-03 15:23:05.557653: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-02-03 15:23:06.355735: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+/home/gridsan/yyao/.local/lib/python3.10/site-packages/lightning/pytorch/callbacks/model_checkpoint.py:654: Checkpoint directory /home/gridsan/yyao/Research_Projects/Microstructure_Enough/deepfaker/src/ckpt exists and is not empty.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [GPU-86d72a62-bc3a-8e75-c29a-bc11809c2499,GPU-6e2db9fc-b146-10bb-c827-e346e82fa99f]
+
+  | Name    | Type              | Params | Mode 
+------------------------------------------------------
+0 | model   | VRES_CNN_64to1024 | 315 M  | train
+1 | loss_fn | MSELoss           | 0      | train
+------------------------------------------------------
+315 M     Trainable params
+0         Non-trainable params
+315 M     Total params
+1,261.912 Total estimated model params size (MB)
+52        Modules in train mode
+0         Modules in eval mode
+SLURM auto-requeueing enabled. Setting signal handlers.
+/home/gridsan/yyao/.local/lib/python3.10/site-packages/lightning/pytorch/trainer/connectors/logger_connector/result.py:434: It is recommended to use `self.log('val_loss', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+/home/gridsan/yyao/.local/lib/python3.10/site-packages/lightning/pytorch/loops/fit_loop.py:310: The number of training batches (36) is smaller than the logging interval Trainer(log_every_n_steps=50). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+slurmstepd-d-10-9-1: error: *** STEP 27954794.0 ON d-10-9-1 CANCELLED AT 2025-02-04T15:22:47 DUE TO TIME LIMIT ***

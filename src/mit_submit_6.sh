@@ -23,7 +23,7 @@ module load anaconda/Python-ML-2024b
 # Notice the space after --strategy "ddp"
 srun python3 Demo_6.py \
   --max_epochs 1000000 \
-  --ckpt_dir "$(pwd)/../src/ckpt"
+  --ckpt_dir "$(pwd)/../src/ckpt" \
   --ckpt_interval 100 \
-  --strategy "ddp" \
+  --strategy "auto" \
   --num_nodes 1
