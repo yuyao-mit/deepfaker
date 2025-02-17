@@ -13,9 +13,7 @@
 [composable-demo]: https://colab.research.google.com/github/energy-based-model/Compositional-Visual-Generation-with-Composable-Diffusion-Models-PyTorch/blob/main/notebooks/demo.ipynb
 [huggingface-demo]: https://huggingface.co/spaces/Shuang59/Composable-Diffusion
 
-This is the official implementation of `Deep Faker`
-**Ju Li Group**  
-Massachusetts Institute of Technology  
+This is the official implementation of `Deep Faker`  
 
 ---
 
