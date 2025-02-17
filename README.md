@@ -87,9 +87,11 @@ python -m pip check
 
 ```
 ## Citation
+```
 @article{2025deepfaker,
       title={deep faker}, 
       author={Ju Li Group},
       journal={arXiv preprint arXiv:25xx.xxxxx},
       year={2025}
 }
+```
